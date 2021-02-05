@@ -1,2 +1,10 @@
 config:
   info: "config info for main(dev)"
+
+# Swagger 属性配置
+swagger:
+  enable: true
+  application-name: ${spring.application.name}
+  version: 1.0
+  description: ${spring.application.name} 整合 swagger 3.0
+  try-host: http://localhost:${server.port}
